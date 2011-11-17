@@ -29,8 +29,8 @@ app.use(express.favicon())
 app.use(express.compiler(src: __dirname + '/src', dest: __dirname + '/public', enable: ['less', 'coffeescript']))
 app.use(express.static(__dirname + '/public'))
 
-app.listen(3000)
-console.log('listening on :3000')
+app.listen(1000)
+console.log('listening on :1000')
 
 socket = io.listen(app)
 
